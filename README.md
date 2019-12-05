@@ -1,4 +1,4 @@
-# PCBS-Projet
+# PCBS-tache estimmation numérique
 
 Source : 
 Viarouge, A., Courtier, P., Hoppe, M., Melnik, J., Houdé, O., & Borst, G. (2018). Spontaneous orientation towards irrelevant dimensions of magnitude and numerical acuity. Learning and Instruction, 54, 156-163. http://dx.doi.org/10.1016/j.learninstruc.2017.09.004
