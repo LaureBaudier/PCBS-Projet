@@ -22,23 +22,23 @@ L'objectif du présent projet est de répliquer la tâche utilisée par Viarouge
 
 # II. Plan 
 
-1) Préparation des stimuli (avec Pygame)
+## 1) Préparation des stimuli (avec Pygame)
 
 
-1.1) Stimuli congruents : script "PARTIE 1 : Stimuli congruents.py"
-####Objectif = Génération de paires d'ensembles de points dont le rapport numérosité/taille est Congruent : points plus gros du côté où il y en a le plus
+_1.1) Stimuli congruents : script "PARTIE 1 : Stimuli congruents.py"_
+*Objectif = Génération de paires d'ensembles de points dont le rapport numérosité/taille est Congruent : points plus gros du côté où il y en a le plus*
 	
 1.1.a) Définition d'une fonction most_size_side_cong(), qui détermine le côté qui comporte le plus de points 
 1.1.b) Définition d'une fonction display_dots_size_cong(), qui génère des ensembles de points à numérosité aléatoire puis définit la taille des points de manière congruente
 	
 1.2) Stimuli incongruents : script "PARTIE 2 : Stimuli incongruents.py"
-####Objectif = Génération de paires d'ensembles de points dont le rapport numérosité/taille est Incongruent : points plus petits du côté où il y en a le plus
+*Objectif = Génération de paires d'ensembles de points dont le rapport numérosité/taille est Incongruent : points plus petits du côté où il y en a le plus*
 	
 1.2.a) Définition d'une fonction most_size_side_incong(), qui détermine le côté qui comporte le plus de points
 1.2.b) Définition d'une fonction display_dots_size_incong(), qui génère des ensembles de points à numérosité aléatoire puis définit la taille des points de manière incongruente
 
 
-2) L'expérience (avec Expyriment)
+## 2) L'expérience (avec Expyriment)
 
 2.1) Construction et exécution de la tâche expérimentale : script "PARTIE 3 : Opérationnalisation de la tâche expérimentale.py"
 	
@@ -49,7 +49,7 @@ L'objectif du présent projet est de répliquer la tâche utilisée par Viarouge
 2.2) Commentaires et conclusion
 
 
-3) Annexe : Consignes -énoncées à l'oral- de l'expérience originale de Viarouge et al. (2018)
+## 3) Annexe : Consignes -énoncées à l'oral- de l'expérience originale de Viarouge et al. (2018)
 
 
 
@@ -59,7 +59,7 @@ L'objectif du présent projet est de répliquer la tâche utilisée par Viarouge
 
 # III. Déroulé du programme
 
-1) Préparation des stimuli (avec Pygame)
+## 1) Préparation des stimuli (avec Pygame)
 
 1.2) Stimuli congruents : script "PARTIE 1 : Stimuli congruents.py"
 Objectif = Génération de paires d'ensembles de points dont le rapport numérosité/taille est Congruent : points plus gros du côté où il y en a le plus
@@ -178,9 +178,9 @@ Nous disposons désormais de scripts qui permettent de générer des ensembles d
 
 	
 
-2) L'expérience (avec Expyriment)
+## 2) L'expérience (avec Expyriment)
 
-2.1) Construction et exécution de la tâche expérimentale : script "PARTIE 3 : Opérationnalisation de la tâche expérimentale.py"
+_2.1) Construction et exécution de la tâche expérimentale : script "PARTIE 3 : Opérationnalisation de la tâche expérimentale.py"_
 
 2.1.a) Génération des ensembles de points au format .png, grâce aux fonctions display_dots_size_cong() et display_dots_size_incong()
 
@@ -287,7 +287,7 @@ J'ai conscience que ma production est globalement médiocre, mais je suis satisf
 
 
 
-3) Annexe
+# 3) Annexe
 Consignes -énoncées à l'oral- de l'expérience originale
 Je ne suis donc pas la première étudiante à avoir cherché à reproduire cette tâche de l'expérience de Viarouge et al. (2018). Je partage en annexe les consignes originales (énoncées à l'oral) associées à la tâche. Je les ai en ma possession parce qu'Arnaud Viarouge a encadré mon projet étudiant de L3 lors duquel nous avons pu reconduire cette tâche ensemble avec de jeunes enfants. Peut-être que cela servira un jour à quelqu'un d'autre 
 
