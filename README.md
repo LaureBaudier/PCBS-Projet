@@ -1,4 +1,4 @@
-I. Tâche de comparaison numérique non-symbolique
+# I. Tâche de comparaison numérique non-symbolique
 
 
 Source : 
@@ -20,7 +20,7 @@ L'objectif du présent projet est de répliquer la tâche utilisée par Viarouge
 
 
 
-II. Plan 
+# II. Plan 
 
 1) Préparation des stimuli (avec Pygame)
 
@@ -57,7 +57,7 @@ Objectif = Génération de paires d'ensembles de points dont le rapport numéros
 
 
 
-III. Déroulé du programme
+# III. Déroulé du programme
 
 1) Préparation des stimuli (avec Pygame)
 
@@ -270,8 +270,8 @@ L'expérience se termine par un message qui félicite l'enfant (peu importe sa r
 
 
 
-# Fin de l'expérience
-expyriment.control.end()
+	# Fin de l'expérience
+	expyriment.control.end()
 
 2.2) Commentaires et conclusion
 
