@@ -26,13 +26,13 @@ L'objectif du présent projet est de répliquer la tâche utilisée par Viarouge
 
 
 1.1) Stimuli congruents : script "PARTIE 1 : Stimuli congruents.py"
-Objectif = Génération de paires d'ensembles de points dont le rapport numérosité/taille est Congruent : points plus gros du côté où il y en a le plus
+####Objectif = Génération de paires d'ensembles de points dont le rapport numérosité/taille est Congruent : points plus gros du côté où il y en a le plus
 	
 1.1.a) Définition d'une fonction most_size_side_cong(), qui détermine le côté qui comporte le plus de points 
 1.1.b) Définition d'une fonction display_dots_size_cong(), qui génère des ensembles de points à numérosité aléatoire puis définit la taille des points de manière congruente
 	
 1.2) Stimuli incongruents : script "PARTIE 2 : Stimuli incongruents.py"
-Objectif = Génération de paires d'ensembles de points dont le rapport numérosité/taille est Incongruent : points plus petits du côté où il y en a le plus
+####Objectif = Génération de paires d'ensembles de points dont le rapport numérosité/taille est Incongruent : points plus petits du côté où il y en a le plus
 	
 1.2.a) Définition d'une fonction most_size_side_incong(), qui détermine le côté qui comporte le plus de points
 1.2.b) Définition d'une fonction display_dots_size_incong(), qui génère des ensembles de points à numérosité aléatoire puis définit la taille des points de manière incongruente
