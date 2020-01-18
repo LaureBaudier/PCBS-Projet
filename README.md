@@ -10,9 +10,9 @@ Dans leur expérience, Viarouge et al.(2018) utilisent une tâche dite "de compa
 Dans l'expérience originale, les nuages de points à comparer varient selon trois dimensions, ou "magnitudes": leur numérosité, leur taille ainsi que l'espacement entre les points. A des fins de simplification, la tâche présentement réalisée varie selon deux magnitudes uniquement :  la numérosité et la taille des points.
 Un "score de comparaison numérique" peut être calculé à partir des réussites aux essais "congruents" et "incongruents". Dans les essais dits "incongruents", la taille des points vient perturber le jugement numérique, car l'ensemble qui comporte le plus grand nombre de points est également celui dont les points sont les plus petits.
 
-L'objectif du présent projet est de répliquer la tâche utilisée par Viarouge et al., selon les paramètres décrits dans leur papier et selon la restriction à deux magnitudes explicitées ci-dessus. Les auteurs ont adapté la tâche à une jeune population : à des fins ludiques, les paires de points à comparer sont présentés sur les ailes d'une coccinelle. 
-
-
+L'objectif du présent projet est de répliquer la tâche utilisée par Viarouge et al., selon les paramètres décrits dans leur papier et selon la restriction à deux magnitudes explicitées ci-dessus. Les auteurs ont adapté la tâche à une jeune population : à des fins ludiques, les paires de points à comparer sont présentés sur les ailes d'une coccinelle.   
+  
+  
 
 
 
@@ -25,28 +25,28 @@ L'objectif du présent projet est de répliquer la tâche utilisée par Viarouge
 ## 1) Préparation des stimuli (avec Pygame)
 
 
-_1.1) Stimuli congruents : script "PARTIE 1 : Stimuli congruents.py"_
+### 1.1) Stimuli congruents : script "PARTIE 1 : Stimuli congruents.py"  
 *Objectif = Génération de paires d'ensembles de points dont le rapport numérosité/taille est Congruent : points plus gros du côté où il y en a le plus*
 	
-1.1.a) Définition d'une fonction most_size_side_cong(), qui détermine le côté qui comporte le plus de points 
-1.1.b) Définition d'une fonction display_dots_size_cong(), qui génère des ensembles de points à numérosité aléatoire puis définit la taille des points de manière congruente
+* 1.1.a) Définition d'une fonction most_size_side_cong(), qui détermine le côté qui comporte le plus de points   
+* 1.1.b) Définition d'une fonction display_dots_size_cong(), qui génère des ensembles de points à numérosité aléatoire puis définit la taille des points de manière congruente
 	
-1.2) Stimuli incongruents : script "PARTIE 2 : Stimuli incongruents.py"
+### 1.2) Stimuli incongruents : script "PARTIE 2 : Stimuli incongruents.py"  
 *Objectif = Génération de paires d'ensembles de points dont le rapport numérosité/taille est Incongruent : points plus petits du côté où il y en a le plus*
 	
-1.2.a) Définition d'une fonction most_size_side_incong(), qui détermine le côté qui comporte le plus de points
-1.2.b) Définition d'une fonction display_dots_size_incong(), qui génère des ensembles de points à numérosité aléatoire puis définit la taille des points de manière incongruente
+* 1.2.a) Définition d'une fonction most_size_side_incong(), qui détermine le côté qui comporte le plus de points  
+* 1.2.b) Définition d'une fonction display_dots_size_incong(), qui génère des ensembles de points à numérosité aléatoire puis définit la taille des points de manière incongruente  
 
 
 ## 2) L'expérience (avec Expyriment)
 
-2.1) Construction et exécution de la tâche expérimentale : script "PARTIE 3 : Opérationnalisation de la tâche expérimentale.py"
+### 2.1) Construction et exécution de la tâche expérimentale : script "PARTIE 3 : Opérationnalisation de la tâche expérimentale.py"
 	
-2.1.a) Génération des ensembles de points au format .png, grâce aux fonctions display_dots_size_cong() et display_dots_size_incong()
-2.1.b) Opérationnalisation de la tâche avec Expyriment
+* 2.1.a) Génération des ensembles de points au format .png, grâce aux fonctions display_dots_size_cong() et display_dots_size_incong()
+* 2.1.b) Opérationnalisation de la tâche avec Expyriment
 	
 	
-2.2) Commentaires et conclusion
+### 2.2) Commentaires et conclusion
 
 
 ## 3) Annexe : Consignes -énoncées à l'oral- de l'expérience originale de Viarouge et al. (2018)
@@ -61,10 +61,11 @@ _1.1) Stimuli congruents : script "PARTIE 1 : Stimuli congruents.py"_
 
 ## 1) Préparation des stimuli (avec Pygame)
 
-1.2) Stimuli congruents : script "PARTIE 1 : Stimuli congruents.py"
-Objectif = Génération de paires d'ensembles de points dont le rapport numérosité/taille est Congruent : points plus gros du côté où il y en a le plus
+### 1.2) Stimuli congruents : script "PARTIE 1 : Stimuli congruents.py"  
+*Objectif = Génération de paires d'ensembles de points dont le rapport numérosité/taille est Congruent : points plus gros du côté où il y en a le plus*  
+  
 
-1.1.a) Définition d'une fonction most_size_side_cong(), qui détermine le côté qui comporte le plus de points 
+* 1.1.a) Définition d'une fonction most_size_side_cong(), qui détermine le côté qui comporte le plus de points 
 
 Les essais dits "congruents" sont mieux réussis à tous âges car l'estimation de la numérosité n'est pas perturbée par la taille des points. En effet, l'ensemble qui comporte le plus de points est également celui dont les points sont les plus gros, et inversement.
 Une première fonction most_size_side_cong() est d'abord définie. Elle permet de comparer le nombre de deux ensembles de points, généré aléatoirement, sur les deux côtés de l'écran, afin de déterminer où se trouve l'ensemble le plus grand. Elle permettra d'attribuer un ratio de taille congruent avec la numérosité : les points qui composent le plus grand ensemble auront un rayon supérieur à ceux du plus petit ensemble. Le ratio de la taille des points est de 2:3, car c'est celui qui est facilement discriminable pour les enfants de 6 ans (Viarouge et al., 2018)
@@ -92,9 +93,9 @@ Une première fonction most_size_side_cong() est d'abord définie. Elle permet d
 		
 		
 
-1.1.b) Définition d'une fonction display_dots_size_cong(), qui génère des ensembles de points à numérosité aléatoire puis définit la taille des points de manière congruente
+* 1.1.b) Définition d'une fonction display_dots_size_cong(), qui génère des ensembles de points à numérosité aléatoire puis définit la taille des points de manière congruente
 
-Une seconde fonction display_dots_size_cong() est ensuite définie. C'est elle qui permet de générer aléatoirement un nombre de points attribué à gauche et à droite (de 5 à 15 points). Elle génère des coordonnées aléatoires du centre de chaque point dans un espace définit par la taille des ailles de la coccinelle qui se trouve en arrière plan, et applique le ratio de taille congruent, déterminé par la fonction most_size_side_cong() via la taille de leur rayon.
+Une seconde fonction display_dots_size_cong() est ensuite définie. C'est elle qui permet de générer aléatoirement un nombre de points attribué à gauche et à droite (de 5 à 15 points). Elle génère des coordonnées aléatoires du centre de chaque point dans un espace définit par la taille des ailles de la coccinelle qui se trouve en arrière plan, et applique le ratio de taille congruent, déterminé par la fonction most_size_side_cong() via la taille de leur rayon.  
 Elle permettra aussi de sauvegarder les stimuli sur le disque, sous le nom défini en paramètre de la fonction
 
 	'''1.1.b Définition d'une fonction display_dots_size_cong(), qui génère des ensembles de points à numérosité aléatoire puis définit la taille des points de manière congruente : '''
@@ -167,12 +168,12 @@ Elle permettra aussi de sauvegarder les stimuli sur le disque, sous le nom défi
 		
 
 
-1.2) Stimuli incongruents : script "PARTIE 2 : Stimuli incongruents.py"
-Objectif = Génération de paires d'ensembles de points dont le rapport numérosité/taille est Incongruent : points plus petits du côté où il y en a le plus
+### 1.2) Stimuli incongruents : script "PARTIE 2 : Stimuli incongruents.py"
+*Objectif = Génération de paires d'ensembles de points dont le rapport numérosité/taille est Incongruent : points plus petits du côté où il y en a le plus*  
 
 
 Dans les essais dits "incongruents", la tâche est plus difficile, car cette fois le coté qui comporte le plus de points est celui dont les points sont les plus petits.
-Un script identique à celui qui vient d'être décrit est définit, en inversant les fonctions de manière à ce que les ratios de numérosité et de taille soient incongruents.
+Un script identique à celui qui vient d'être décrit est définit, en inversant les fonctions de manière à ce que les ratios de numérosité et de taille soient incongruents.  
 
 Nous disposons désormais de scripts qui permettent de générer des ensembles de points dont le ratio numérique est randomisé, avec un ratio de taille de 2:3 contrebalancé de manière égale entre les essais congruents et incongruents.
 
@@ -180,9 +181,9 @@ Nous disposons désormais de scripts qui permettent de générer des ensembles d
 
 ## 2) L'expérience (avec Expyriment)
 
-_2.1) Construction et exécution de la tâche expérimentale : script "PARTIE 3 : Opérationnalisation de la tâche expérimentale.py"_
+### 2.1) Construction et exécution de la tâche expérimentale : script "PARTIE 3 : Opérationnalisation de la tâche expérimentale.py"_
 
-2.1.a) Génération des ensembles de points au format .png, grâce aux fonctions display_dots_size_cong() et display_dots_size_incong()
+* 2.1.a) Génération des ensembles de points au format .png, grâce aux fonctions display_dots_size_cong() et display_dots_size_incong()
 
 Les analyses de l'expérience originale portent sur 3 blocs de 16 essais, soit 48 essais au total. Seul le script du premier bloc est présenté, les deuxième et troisième bloc étant construits de manière identique.
 Une boucle génère puis enregistre (au format .png) successivement un essai congruent et un essai incongruent dans une liste, jusqu'à ce que le bloc comporte 8 essais de chaque sorte. L'ensemble des 16 essais est ensuite randomisé au sein de la liste.
@@ -210,12 +211,14 @@ Une boucle génère puis enregistre (au format .png) successivement un essai con
 	random.shuffle(list_stim_bloc_1)
 	
 	
-2.1.b) Opérationnalisation de la tâche avec Expyriment
+* 2.1.b) Opérationnalisation de la tâche avec Expyriment
 
-Les modules expyriment permettant d'opérationnaliser la tâche sont successivement appelés. La procédure de l'expérience est définie comme suit :
+Les modules expyriment permettant d'opérationnaliser la tâche sont successivement appelés. La procédure de l'expérience est définie comme suit :  
+
+   
 
 1° Avant de commencer, un bref rappel des consignes (qui ont été explicitées à l'oral par l'expérimentateur) permet à l'enfant de se concentrer, et d'appuyer lui-même sur la barre d'espace pour commencer l'expérience
-	
+
 	# 1° Rappel de la consigne :
 	# Création d'un stimulus "rappel des consignes". N.B.: Celles-ci sont rapidement rappelées aux enfants mais elles ont été explicitées plus en détails à l'oral.
 	rappel_consignes = expyriment.stimuli.TextLine(text= "Si tu vois plus de points à gauche, appuie sur D. Si tu vois plus de points à droite, appuie sur K. Appuie sur la barre d'espace pour commencer", text_size=24, text_colour = (240, 195, 0))
@@ -273,7 +276,7 @@ L'expérience se termine par un message qui félicite l'enfant (peu importe sa r
 	# Fin de l'expérience
 	expyriment.control.end()
 
-2.2) Commentaires et conclusion
+### 2.2) Commentaires et conclusion
 
 Je tiens à préciser que je me suis appuyée sur le travail d'une précédente étudiante, sans lequel je n'aurais pas réussi à écrire ces scripts. 
 Le lien de son projet : https://github.com/JudiKL/PCBS-NumerosityComparison/blob/master/README.md 
@@ -287,7 +290,8 @@ J'ai conscience que ma production est globalement médiocre, mais je suis satisf
 
 
 
-# 3) Annexe
+# 3) Annexe  
+
 Consignes -énoncées à l'oral- de l'expérience originale
 Je ne suis donc pas la première étudiante à avoir cherché à reproduire cette tâche de l'expérience de Viarouge et al. (2018). Je partage en annexe les consignes originales (énoncées à l'oral) associées à la tâche. Je les ai en ma possession parce qu'Arnaud Viarouge a encadré mon projet étudiant de L3 lors duquel nous avons pu reconduire cette tâche ensemble avec de jeunes enfants. Peut-être que cela servira un jour à quelqu'un d'autre 
 
